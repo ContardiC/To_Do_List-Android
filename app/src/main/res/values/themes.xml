@@ -1,9 +1,27 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
     <!-- Base application theme. -->
-    <style name="Base.Theme.ToDoList" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#356859</item>            <!-- Primary color -->
+        <item name="colorPrimaryVariant">#1B3A34</item>         <!-- Dark primary color -->
+        <item name="colorOnPrimary">#FFFFFF</item>            <!-- Color for text/icons on primary -->
+        <item name="colorSecondary">#FD5523</item>            <!-- Secondary color -->
+        <item name="colorSecondaryVariant">#C43C1D</item>         <!-- Dark secondary color -->
+        <item name="colorOnSecondary">#FFFFFF</item>            <!-- Color for text/icons on secondary -->
+        <item name="android:windowBackground">#FFFFFF</item>  <!-- Window background color -->
+        <item name="fontFamily">@font/lekton</item>      <!-- Rubik font -->
     </style>
 
-    <style name="Theme.ToDoList" parent="Base.Theme.ToDoList" />
+    <!-- Text appearance for action bar title -->
+    <style name="TextAppearance.App.ActionBar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="fontFamily">@font/montserrat</item>      <!-- Rubik Medium font -->
+    </style>
+
+    <!-- Apply the custom text appearance to the action bar title -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textAppearance">@style/TextAppearance.App.ActionBar.Title</item>
+    </style>
+
 </resources>

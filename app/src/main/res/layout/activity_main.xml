@@ -5,19 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFFBE6"
+    android:background="#FFFBE6"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#E7E4CC"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="To-Do List di PuffoGino"
-        app:titleTextColor="#fd5523" />
 
     <LinearLayout
 
@@ -34,14 +25,16 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Add new item"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColorHint="#B9E4C9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ADD" />
+            android:text="Aggiungi"
+            app:icon="@android:drawable/ic_menu_add"
+            style="?attr/materialButtonStyle" />
 
     </LinearLayout>
 
